@@ -1,0 +1,113 @@
+body {
+    background-color: white;
+    font-family: verdana;
+    font-size: 1.3vw;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+}
+
+header img {
+    height: 130px; /* Dimensioni del logo */
+}
+
+.box_img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foto {
+    width: 50%;
+    height: auto;
+    display: inline-block; /* Corretto errore di sintassi */
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 20px;
+    color: rgb(0, 128, 128);
+    font-size: 1.5vw;
+    position: sticky;
+    top: 0;               /* Sticky: attaccato in alto */
+    background-color: white; /* Sfondo bianco per coprire contenuto dietro */
+    z-index: 100;            /* Mantiene nav sopra gli altri elementi */
+    justify-content: center; 
+}
+
+hr {
+    flex-basis: 100%;
+    border: none;
+    height: 2px;
+    background-color: rgb(0, 128, 128);
+}
+
+nav a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+nav a:visited {
+    color: rgb(255, 163, 0);
+}
+
+nav a:hover {
+    color: white;
+    background-color: rgb(0, 128, 128);
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: black;
+}
+
+.blocco {
+	display: flex;
+    align-items: flex-start; 
+}
+
+article {
+	font-size: 1.2vw;
+	border: 2px solid rgb(0, 128, 128); 
+    padding: 10px;            
+    margin: 10px; 
+    width: 100%;  
+    align-items: left;         
+}
+
+aside {
+    display: flex; 
+    padding: 10px;
+    align-content: left;
+    flex-direction: column;
+}
+
+aside img {
+	margin: 10px;
+}
+.io{
+	width: 20%;
+    height: auto;
+}
+.bloccovito{
+	display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spazio tra gli articoli */
+}
+footer {
+    color: black;
+    font-size: 1vw;
+}
+
+footer nav {
+    display: flex;
+    justify-content: flex-start; /* Allinea a sinistra */
+    gap: 20px;
+}
